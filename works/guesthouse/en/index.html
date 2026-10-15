@@ -23,7 +23,7 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@400;500;600;700&family=Noto+Serif+Armenian:wght@500;600&family=Onest:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@400;600&family=Noto+Serif+Armenian:wght@500&family=Onest:wght@400;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <script type="application/ld+json">
   {
@@ -38,36 +38,38 @@
 </head>
 <body>
 
-<header class="header">
-  <div class="container header__row">
-    <a class="logo" href="#top" aria-label="Antar House — home"><b>ANTAR</b><span>Dilijan</span></a>
-    <nav class="nav" id="nav" aria-label="Main menu">
-      <a href="#cabins">Cabins</a>
-      <a href="#day">A day here</a>
-      <a href="#around">Around</a>
-      <a href="#book">Booking</a>
-      <a href="#faq">FAQ</a>
-      <div class="nav__extra">
-        <a class="btn btn--accent btn--block" href="#book">Book now</a>
-        <a class="btn btn--wa btn--block" href="https://wa.me/37477116736" target="_blank" rel="noopener">WhatsApp</a>
-      </div>
-    </nav>
-    <div class="lang" aria-label="Language">
+<header class="topbar">
+  <a class="brand island" href="#top" aria-label="Antar House — home">
+    <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".55"/><path class="ridge" d="M5 29 L13 19 L18 24 L25 15 L35 29 Z"/><path class="tree" d="M20 8 L25.5 17 H22.5 L27 24 H22 V30 H18 V24 H13 L17.5 17 H14.5 Z"/></svg>
+    <span class="brand__txt"><b>ANTAR</b><small>40.74° N · 44.86° E</small></span>
+  </a>
+  <div class="topbar__right">
+    <button class="season-badge island" type="button" aria-label="Change the season"><svg class="i s-spring" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-8M12 13c-4 0-6-3-6-7 4 0 6 3 6 7zM12 13c4 0 6-3 6-7-4 0-6 3-6 7z"/></svg><svg class="i s-summer" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i s-autumn" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15zM5 19l8-8"/></svg><svg class="i s-winter" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M4 7l16 10M4 17L20 7M9 4l3 2 3-2M9 20l3-2 3 2"/></svg></button>
+    <div class="lang island" aria-label="Language">
       <a href="../" hreflang="hy" lang="hy" data-lang>ՀԱՅ</a>
       <a href="../ru/" hreflang="ru" lang="ru" data-lang>РУС</a>
       <span class="is-active"><span>ENG</span></span>
     </div>
-    <a class="btn btn--accent header__cta magnetic" href="#book">Book now</a>
-    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    <a class="btn btn--accent topbar__book" href="#book">Book now</a>
   </div>
 </header>
+
+<nav class="dock island" aria-label="Main menu">
+  <a href="#cabins" data-sec="cabins"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 9.5V20h14V9.5M10 20v-5h4v5"/></svg><span>Cabins</span></a>
+  <a href="#day" data-sec="day"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18M6 17a6 6 0 0 1 12 0M12 5V3M5.6 8.6L4.2 7.2M18.4 8.6l1.4-1.4"/></svg><span>A day</span></a>
+  <a href="#around" data-sec="around"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2zM9 4v14M15 6v14"/></svg><span>Around</span></a>
+  <a class="dock__faq" href="#faq" data-sec="faq"><span>FAQ</span></a>
+  <a class="dock__book" href="#book" data-sec="book"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Book</span></a>
+  <a class="dock__wa" href="https://wa.me/37477116736" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z"/></svg></a>
+  <i class="dock__glider" aria-hidden="true"></i>
+</nav>
 
 <main id="top">
 
   <!-- ============ HERO: live scene ============ -->
   <section class="hero" aria-label="Antar House">
     <div class="hero__scene" aria-hidden="true">
-      <div class="hero__layer" data-depth="0">
+      <div class="hero__layer" data-depth="0" style="--d:1">
         <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice">
           <defs>
             <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
@@ -75,7 +77,6 @@
               <stop offset=".55" style="stop-color:var(--sky2)"/>
               <stop offset="1" style="stop-color:var(--sky3)"/>
             </linearGradient>
-            <filter id="fogBlur" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="20"/></filter>
             <radialGradient id="sunGlow"><stop offset="0" style="stop-color:var(--sun)" stop-opacity=".9"/><stop offset="1" style="stop-color:var(--sun)" stop-opacity="0"/></radialGradient>
           </defs>
           <rect width="1440" height="900" fill="url(#skyGrad)"/>
@@ -83,26 +84,26 @@
           <circle cx="1040" cy="300" r="64" style="fill:var(--sun)"/>
         </svg>
       </div>
-      <div class="hero__layer" data-depth="0.08">
+      <div class="hero__layer" data-depth="0.08" style="--d:2">
         <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice"><path style="fill:var(--distant)" d="M-40 940 L-40 409 L0 409 C5 408 20 405 30 404 C40 402 50 403 60 402 C70 400 80 395 90 393 C100 392 110 393 120 392 C130 391 140 388 150 387 C160 385 170 382 180 382 C190 381 200 383 210 382 C220 381 230 378 240 377 C250 377 260 379 270 378 C280 378 290 376 300 376 C310 375 320 375 330 376 C340 376 350 377 360 378 C370 379 380 381 390 380 C400 380 410 377 420 376 C430 375 440 376 450 376 C460 376 470 377 480 377 C490 378 500 378 510 378 C520 377 530 374 540 373 C550 371 560 369 570 369 C580 368 590 370 600 368 C610 367 620 360 630 359 C640 357 650 360 660 359 C670 358 680 353 690 351 C700 349 710 348 720 346 C730 345 740 343 750 342 C760 341 770 341 780 341 C790 341 800 342 810 342 C820 341 830 338 840 338 C850 337 860 340 870 341 C880 342 890 342 900 343 C910 344 920 344 930 345 C940 346 950 349 960 351 C970 352 980 352 990 353 C1000 355 1010 357 1020 360 C1030 362 1040 364 1050 367 C1060 370 1070 375 1080 377 C1090 380 1100 381 1110 383 C1120 384 1130 386 1140 388 C1150 390 1160 394 1170 396 C1180 398 1190 399 1200 400 C1210 401 1220 401 1230 402 C1240 404 1250 407 1260 408 C1270 409 1280 409 1290 409 C1300 409 1310 407 1320 407 C1330 407 1340 408 1350 408 C1360 408 1370 407 1380 407 C1390 407 1400 408 1410 407 C1420 407 1435 405 1440 404 L1480 404 L1480 940 Z"/></svg>
       </div>
-      <div class="hero__layer" data-depth="0.16">
+      <div class="hero__layer" data-depth="0.16" style="--d:3">
         <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice">
           <path style="fill:var(--far)" d="M-40 940 L-40 474 L0 474 C5 476 20 486 30 487 C40 489 50 484 60 484 C70 484 80 487 90 487 C100 488 110 489 120 487 C130 486 140 480 150 478 C160 475 170 476 180 474 C190 472 200 465 210 463 C220 461 230 463 240 462 C250 461 260 459 270 457 C280 456 290 453 300 452 C310 451 320 453 330 453 C340 452 350 448 360 448 C370 447 380 450 390 451 C400 451 410 451 420 450 C430 450 440 451 450 450 C460 449 470 448 480 447 C490 447 500 447 510 446 C520 445 530 444 540 441 C550 439 560 433 570 430 C580 426 590 426 600 422 C610 418 620 410 630 407 C640 404 650 405 660 403 C670 401 680 396 690 394 C700 392 710 393 720 392 C730 391 740 389 750 388 C760 387 770 385 780 385 C790 386 800 389 810 391 C820 394 830 399 840 402 C850 404 860 404 870 407 C880 410 890 418 900 422 C910 426 920 428 930 432 C940 435 950 439 960 442 C970 445 980 447 990 451 C1000 454 1010 461 1020 463 C1030 465 1040 461 1050 462 C1060 462 1070 463 1080 464 C1090 464 1100 464 1110 464 C1120 465 1130 468 1140 467 C1150 466 1160 459 1170 458 C1180 457 1190 459 1200 460 C1210 460 1220 460 1230 460 C1240 461 1250 463 1260 464 C1270 465 1280 465 1290 466 C1300 467 1310 470 1320 470 C1330 471 1340 469 1350 469 C1360 470 1370 473 1380 474 C1390 475 1400 475 1410 476 C1420 477 1435 480 1440 480 L1480 480 L1480 940 Z"/>
-          <g class="fog fog--a" filter="url(#fogBlur)"><ellipse cx="420" cy="505" rx="560" ry="38"/><ellipse cx="1150" cy="520" rx="500" ry="34"/></g>
         </svg>
+        <div class="fog fog--a"></div>
       </div>
-      <div class="hero__layer" data-depth="0.26">
+      <div class="hero__layer" data-depth="0.26" style="--d:4">
         <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice"><path style="fill:var(--mid)" d="M-40 940 L-40 568 L0 568 C5 565 20 552 30 547 C40 542 50 541 60 538 C70 536 80 535 90 534 C100 533 110 532 120 532 C130 532 140 535 150 535 C160 536 170 537 180 536 C190 535 200 533 210 530 C220 527 230 523 240 521 C250 519 260 520 270 517 C280 515 290 510 300 507 C310 504 320 502 330 501 C340 500 350 501 360 501 C370 501 380 499 390 499 C400 500 410 502 420 505 C430 509 440 515 450 520 C460 526 470 533 480 538 C490 542 500 541 510 546 C520 552 530 565 540 569 C550 574 560 574 570 576 C580 577 590 579 600 578 C610 578 620 577 630 575 C640 573 650 567 660 565 C670 562 680 562 690 560 C700 558 710 553 720 553 C730 553 740 559 750 559 C760 560 770 555 780 554 C790 554 800 556 810 557 C820 558 830 559 840 559 C850 558 860 556 870 555 C880 553 890 552 900 548 C910 544 920 537 930 532 C940 526 950 520 960 516 C970 511 980 507 990 503 C1000 499 1010 494 1020 491 C1030 489 1040 490 1050 490 C1060 489 1070 485 1080 488 C1090 490 1100 502 1110 506 C1120 511 1130 512 1140 515 C1150 518 1160 519 1170 523 C1180 526 1190 531 1200 535 C1210 539 1220 542 1230 544 C1240 546 1250 547 1260 547 C1270 547 1280 544 1290 545 C1300 546 1310 551 1320 553 C1330 555 1340 555 1350 555 C1360 555 1370 552 1380 552 C1390 553 1400 557 1410 559 C1420 561 1435 562 1440 563 L1480 563 L1480 940 Z"/></svg>
       </div>
-      <h1 class="hero__title" data-depth="0.3" aria-label="Antar House — a guesthouse in the Dilijan forest">ANTAR</h1>
-      <div class="hero__layer" data-depth="0.42">
+      <h1 class="hero__title" aria-label="Antar House — a guesthouse in the Dilijan forest"><span data-depth="0.3"><span class="rise">ANTAR</span></span></h1>
+      <div class="hero__layer" data-depth="0.42" style="--d:5">
         <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice">
           <path style="fill:var(--woods)" d="M-40 940 L-40 636 L0 636 C5 637 20 640 30 639 C40 639 50 636 60 636 C70 635 80 638 90 636 C100 634 110 626 120 624 C130 622 140 621 150 624 C160 627 170 637 180 642 C190 647 200 649 210 654 C220 658 230 662 240 667 C250 672 260 681 270 684 C280 687 290 683 300 683 C310 683 320 684 330 684 C340 683 350 681 360 679 C370 676 380 671 390 668 C400 665 410 664 420 662 C430 660 440 657 450 656 C460 656 470 658 480 657 C490 657 500 654 510 653 C520 651 530 653 540 650 C550 648 560 640 570 636 C580 631 590 629 600 626 C610 623 620 617 630 616 C640 614 650 614 660 618 C670 621 680 630 690 636 C700 642 710 649 720 654 C730 659 740 664 750 667 C760 671 770 673 780 675 C790 676 800 677 810 676 C820 676 830 675 840 673 C850 671 860 666 870 665 C880 665 890 668 900 670 C910 671 920 672 930 672 C940 673 950 673 960 673 C970 673 980 673 990 672 C1000 671 1010 670 1020 666 C1030 662 1040 655 1050 650 C1060 646 1070 641 1080 638 C1090 634 1100 631 1110 628 C1120 624 1130 618 1140 618 C1150 618 1160 625 1170 628 C1180 632 1190 636 1200 639 C1210 643 1220 647 1230 649 C1240 651 1250 650 1260 650 C1270 650 1280 650 1290 650 C1300 650 1310 650 1320 650 C1330 650 1340 650 1350 652 C1360 653 1370 655 1380 659 C1390 663 1400 670 1410 674 C1420 679 1435 686 1440 688 L1480 688 L1480 940 Z M-20 555 L-20 555 L-8 580 L-17 579 L-6 599 L-16 599 L-4 619 L-16 618 L-2 638 L-18 640 L-22 640 L-38 638 L-24 618 L-36 619 L-24 599 L-34 599 L-23 579 L-32 580 L-20 555 Z M-0 564 L-0 564 L11 586 L3 585 L13 604 L3 603 L14 621 L3 620 L16 639 L2 640 L-2 640 L-17 639 L-4 620 L-15 621 L-3 603 L-13 604 L-3 585 L-11 586 L-0 564 Z M23 593 L23 593 L30 607 L25 607 L32 619 L25 618 L33 630 L26 630 L34 642 L25 643 L22 643 L12 642 L21 630 L14 630 L21 618 L15 619 L22 607 L16 607 L23 593 Z M45 554 L45 554 L58 579 L49 578 L60 599 L49 599 L62 620 L49 619 L64 640 L47 642 L43 642 L26 640 L41 619 L28 620 L42 599 L31 599 L42 578 L33 579 L45 554 Z M69 559 L69 559 L80 583 L72 582 L82 601 L72 600 L84 620 L73 619 L86 638 L71 640 L67 640 L51 638 L65 619 L53 620 L65 600 L55 601 L66 582 L57 583 L69 559 Z M88 586 L88 586 L96 601 L90 601 L98 614 L91 613 L99 626 L91 626 L100 639 L90 640 L87 640 L77 639 L86 626 L78 626 L86 613 L79 614 L86 601 L81 601 L88 586 Z M112 570 L112 570 L121 588 L114 587 L122 602 L114 601 L124 616 L115 615 L125 630 L113 631 L110 631 L98 630 L109 615 L100 616 L109 601 L102 602 L110 587 L103 588 L112 570 Z M135 537 L135 537 L148 564 L139 563 L151 584 L139 584 L153 605 L140 604 L155 626 L138 628 L133 628 L116 626 L131 604 L118 605 L132 584 L120 584 L132 563 L123 564 L135 537 Z M154 566 L154 566 L163 585 L157 584 L165 599 L157 599 L167 614 L157 614 L168 629 L156 630 L153 630 L140 629 L151 614 L142 614 L151 599 L143 599 L152 584 L145 585 L154 566 Z M180 566 L180 566 L191 589 L183 589 L193 608 L183 607 L195 626 L183 625 L197 644 L182 646 L178 646 L162 644 L176 625 L164 626 L176 607 L166 608 L177 589 L168 589 L180 566 Z M196 600 L196 600 L203 615 L198 615 L204 627 L198 627 L206 639 L198 639 L207 651 L197 652 L194 652 L184 651 L193 639 L186 639 L193 627 L187 627 L194 615 L188 615 L196 600 Z M211 571 L211 571 L224 596 L215 595 L226 616 L215 615 L228 636 L216 635 L231 656 L214 658 L209 658 L192 656 L207 635 L195 636 L208 615 L197 616 L208 595 L199 596 L211 571 Z M235 616 L235 616 L243 631 L237 631 L244 644 L237 643 L245 656 L238 655 L247 668 L236 669 L234 669 L224 668 L233 655 L225 656 L233 643 L226 644 L233 631 L228 631 L235 616 Z M259 591 L259 591 L272 617 L262 616 L274 638 L263 637 L277 659 L263 658 L279 680 L261 682 L257 682 L239 680 L255 658 L241 659 L255 637 L244 638 L256 616 L246 617 L259 591 Z M281 625 L281 625 L290 643 L283 643 L291 658 L284 657 L293 672 L284 671 L294 686 L282 688 L279 688 L267 686 L278 671 L269 672 L278 657 L270 658 L279 643 L272 643 L281 625 Z M302 635 L302 635 L309 650 L303 650 L310 662 L304 662 L312 674 L304 673 L313 686 L303 687 L300 687 L290 686 L299 673 L291 674 L299 662 L293 662 L300 650 L294 650 L302 635 Z M316 597 L316 597 L329 623 L319 622 L331 644 L320 643 L333 665 L320 664 L335 685 L318 687 L313 687 L296 685 L311 664 L298 665 L312 643 L300 644 L312 622 L303 623 L316 597 Z M337 616 L337 616 L348 636 L340 636 L349 653 L340 652 L351 669 L341 668 L353 685 L339 686 L336 686 L322 685 L334 668 L324 669 L334 652 L326 653 L335 636 L327 636 L337 616 Z M363 616 L363 616 L372 635 L365 634 L374 650 L365 649 L375 665 L366 665 L377 680 L364 682 L361 682 L348 680 L360 665 L350 665 L360 649 L352 650 L360 634 L353 635 L363 616 Z M387 589 L387 589 L399 614 L390 613 L401 633 L391 632 L403 652 L391 651 L405 672 L389 673 L385 673 L369 672 L383 651 L371 652 L384 632 L373 633 L384 613 L375 614 L387 589 Z M404 612 L404 612 L412 628 L406 628 L413 642 L406 641 L415 655 L406 654 L416 668 L405 669 L402 669 L391 668 L401 654 L393 655 L401 641 L394 642 L402 628 L395 628 L404 612 Z M421 608 L421 608 L429 625 L423 624 L431 638 L424 637 L432 651 L424 650 L434 664 L423 665 L420 665 L409 664 L418 650 L410 651 L419 637 L412 638 L419 624 L413 625 L421 608 Z M442 604 L442 604 L451 620 L444 620 L452 634 L445 633 L453 647 L445 647 L455 660 L444 662 L441 662 L430 660 L439 647 L431 647 L440 633 L432 634 L440 620 L434 620 L442 604 Z M461 609 L461 609 L469 624 L463 623 L470 636 L463 635 L471 648 L464 647 L473 660 L463 661 L460 661 L450 660 L459 647 L451 648 L459 635 L453 636 L459 623 L454 624 L461 609 Z M486 598 L486 598 L495 616 L488 616 L497 631 L489 630 L498 645 L489 644 L500 659 L488 660 L485 660 L473 659 L483 644 L474 645 L484 630 L476 631 L484 616 L477 616 L486 598 Z M506 584 L506 584 L516 606 L508 605 L518 622 L509 622 L520 639 L509 638 L522 656 L508 657 L504 657 L490 656 L502 638 L492 639 L503 622 L493 622 L503 605 L495 606 L506 584 Z M531 590 L531 590 L540 609 L533 608 L542 624 L533 623 L543 639 L534 638 L545 654 L532 655 L529 655 L516 654 L527 638 L518 639 L528 623 L520 624 L528 608 L521 609 L531 590 Z M556 578 L556 578 L565 598 L558 597 L567 614 L558 613 L569 629 L559 629 L571 645 L557 647 L554 647 L540 645 L552 629 L542 629 L553 613 L544 614 L553 597 L546 598 L556 578 Z M576 568 L576 568 L586 588 L579 587 L588 604 L579 603 L589 620 L579 619 L591 636 L578 638 L574 638 L561 636 L573 619 L562 620 L573 603 L564 604 L573 587 L566 588 L576 568 Z M590 567 L590 567 L600 586 L593 585 L601 601 L593 601 L603 617 L593 616 L605 632 L592 633 L588 633 L576 632 L587 616 L577 617 L587 601 L579 601 L588 585 L581 586 L590 567 Z M606 582 L606 582 L613 595 L608 595 L614 606 L608 605 L615 616 L609 616 L616 627 L608 628 L605 628 L596 627 L604 616 L597 616 L604 605 L599 606 L605 595 L600 595 L606 582 Z M630 566 L630 566 L638 581 L632 581 L639 594 L632 593 L640 606 L633 606 L642 618 L631 620 L629 620 L618 618 L627 606 L620 606 L628 593 L621 594 L628 581 L622 581 L630 566 Z M650 542 L650 542 L661 565 L653 564 L663 583 L653 582 L665 601 L653 600 L667 619 L652 621 L648 621 L632 619 L646 600 L634 601 L646 582 L636 583 L647 564 L638 565 L650 542 Z M670 567 L670 567 L679 585 L673 584 L681 599 L673 598 L682 613 L673 612 L684 627 L672 628 L669 628 L657 627 L667 612 L659 613 L668 598 L660 599 L668 584 L662 585 L670 567 Z M691 569 L691 569 L701 589 L693 589 L703 606 L694 605 L704 622 L694 622 L706 639 L692 640 L689 640 L675 639 L687 622 L677 622 L687 605 L678 606 L688 589 L680 589 L691 569 Z M714 603 L714 603 L721 618 L716 618 L722 630 L716 629 L724 642 L716 641 L725 653 L715 654 L713 654 L703 653 L711 641 L704 642 L712 629 L705 630 L712 618 L707 618 L714 603 Z M735 607 L735 607 L743 624 L737 623 L744 637 L737 636 L746 650 L737 649 L747 663 L736 664 L733 664 L722 663 L732 649 L724 650 L732 636 L725 637 L733 623 L726 624 L735 607 Z M752 590 L752 590 L764 614 L755 613 L766 632 L755 632 L768 651 L756 650 L770 670 L754 672 L750 672 L734 670 L748 650 L736 651 L749 632 L738 632 L749 613 L740 614 L752 590 Z M772 605 L772 605 L782 626 L775 625 L784 642 L775 642 L786 659 L776 658 L788 675 L774 677 L770 677 L756 675 L769 658 L758 659 L769 642 L760 642 L769 625 L762 626 L772 605 Z M795 592 L795 592 L808 617 L798 616 L810 637 L799 636 L812 658 L799 657 L814 678 L797 680 L793 680 L776 678 L791 657 L778 658 L791 636 L780 637 L792 616 L783 617 L795 592 Z M815 606 L815 606 L825 627 L817 626 L827 644 L818 643 L829 661 L818 660 L831 678 L816 680 L813 680 L798 678 L811 660 L800 661 L811 643 L802 644 L812 626 L804 627 L815 606 Z M835 608 L835 608 L845 628 L837 627 L846 644 L838 643 L848 660 L838 659 L850 676 L836 677 L833 677 L819 676 L831 659 L821 660 L832 643 L823 644 L832 627 L825 628 L835 608 Z M857 606 L857 606 L866 625 L859 624 L868 640 L860 640 L870 656 L860 655 L871 671 L859 673 L855 673 L842 671 L854 655 L844 656 L854 640 L846 640 L854 624 L847 625 L857 606 Z M877 602 L877 602 L887 622 L880 621 L889 638 L880 637 L890 653 L881 653 L892 669 L879 670 L876 670 L862 669 L874 653 L864 653 L874 637 L866 638 L875 621 L868 622 L877 602 Z M903 596 L903 596 L914 618 L905 617 L916 636 L906 635 L918 654 L906 653 L920 672 L905 674 L901 674 L886 672 L899 653 L887 654 L899 635 L889 636 L900 617 L891 618 L903 596 Z M927 587 L927 587 L940 613 L930 612 L942 633 L931 632 L944 654 L931 653 L947 674 L929 676 L925 676 L908 674 L923 653 L910 654 L923 632 L912 633 L924 612 L914 613 L927 587 Z M944 605 L944 605 L954 626 L947 625 L956 642 L947 642 L958 659 L948 658 L960 675 L946 677 L942 677 L929 675 L941 658 L930 659 L941 642 L932 642 L942 625 L934 626 L944 605 Z M970 592 L970 592 L982 617 L973 616 L984 636 L973 635 L986 656 L974 655 L988 675 L972 677 L967 677 L951 675 L965 655 L953 656 L966 635 L955 636 L966 616 L957 617 L970 592 Z M985 625 L985 625 L993 640 L987 639 L994 652 L987 651 L995 663 L988 663 L996 675 L986 676 L984 676 L974 675 L983 663 L975 663 L983 651 L977 652 L983 639 L978 640 L985 625 Z M1004 624 L1004 624 L1012 638 L1006 638 L1013 650 L1007 649 L1014 661 L1007 660 L1015 672 L1006 673 L1003 673 L994 672 L1002 660 L995 661 L1002 649 L996 650 L1003 638 L997 638 L1004 624 Z M1021 620 L1021 620 L1028 634 L1023 634 L1030 646 L1023 645 L1031 657 L1024 656 L1032 668 L1023 669 L1020 669 L1011 668 L1019 656 L1012 657 L1019 645 L1013 646 L1020 634 L1014 634 L1021 620 Z M1043 576 L1043 576 L1055 600 L1046 599 L1057 618 L1047 618 L1059 637 L1047 637 L1061 656 L1045 658 L1041 658 L1025 656 L1039 637 L1028 637 L1040 618 L1030 618 L1040 599 L1032 600 L1043 576 Z M1068 594 L1068 594 L1076 609 L1070 608 L1077 621 L1070 621 L1078 633 L1071 633 L1080 646 L1070 647 L1067 647 L1057 646 L1066 633 L1058 633 L1066 621 L1059 621 L1066 608 L1061 609 L1068 594 Z M1091 562 L1091 562 L1102 584 L1094 583 L1104 601 L1094 601 L1106 619 L1094 618 L1107 636 L1093 638 L1089 638 L1074 636 L1087 618 L1076 619 L1088 601 L1078 601 L1088 583 L1080 584 L1091 562 Z M1106 546 L1106 546 L1119 571 L1110 570 L1121 591 L1110 590 L1123 611 L1111 610 L1125 631 L1109 633 L1104 633 L1088 631 L1102 610 L1090 611 L1103 590 L1092 591 L1103 570 L1094 571 L1106 546 Z M1132 569 L1132 569 L1140 585 L1134 584 L1142 598 L1134 597 L1143 611 L1135 610 L1144 624 L1134 625 L1131 625 L1120 624 L1129 610 L1121 611 L1130 597 L1123 598 L1130 584 L1124 585 L1132 569 Z M1158 564 L1158 564 L1167 582 L1160 582 L1168 597 L1160 597 L1170 612 L1161 611 L1172 627 L1159 628 L1156 628 L1143 627 L1154 611 L1145 612 L1155 597 L1147 597 L1155 582 L1148 582 L1158 564 Z M1177 543 L1177 543 L1190 570 L1181 569 L1193 591 L1181 590 L1195 612 L1182 611 L1197 633 L1180 635 L1175 635 L1157 633 L1173 611 L1160 612 L1173 590 L1162 591 L1174 569 L1164 570 L1177 543 Z M1201 590 L1201 590 L1209 606 L1203 605 L1210 618 L1204 617 L1212 630 L1204 630 L1213 642 L1203 643 L1200 643 L1190 642 L1199 630 L1191 630 L1199 617 L1192 618 L1199 605 L1194 606 L1201 590 Z M1221 580 L1221 580 L1230 600 L1223 600 L1232 616 L1223 616 L1234 633 L1224 632 L1236 649 L1222 650 L1219 650 L1205 649 L1217 632 L1207 633 L1218 616 L1209 616 L1218 600 L1211 600 L1221 580 Z M1239 598 L1239 598 L1246 614 L1241 614 L1248 627 L1241 626 L1249 640 L1241 639 L1251 652 L1240 653 L1237 653 L1227 652 L1236 639 L1228 640 L1236 626 L1229 627 L1237 614 L1231 614 L1239 598 Z M1256 574 L1256 574 L1268 597 L1259 597 L1270 616 L1260 615 L1272 634 L1260 633 L1274 652 L1258 654 L1254 654 L1239 652 L1253 633 L1241 634 L1253 615 L1243 616 L1253 597 L1245 597 L1256 574 Z M1271 582 L1271 582 L1281 603 L1273 602 L1283 619 L1274 619 L1284 636 L1274 635 L1286 652 L1272 654 L1269 654 L1255 652 L1267 635 L1257 636 L1268 619 L1259 619 L1268 602 L1260 603 L1271 582 Z M1290 607 L1290 607 L1297 621 L1292 620 L1298 632 L1292 631 L1299 642 L1292 642 L1300 653 L1291 654 L1289 654 L1280 653 L1288 642 L1281 642 L1288 631 L1282 632 L1288 620 L1283 621 L1290 607 Z M1308 579 L1308 579 L1319 601 L1311 600 L1320 618 L1311 617 L1322 635 L1312 635 L1324 652 L1310 654 L1306 654 L1292 652 L1304 635 L1293 635 L1305 617 L1295 618 L1305 600 L1297 601 L1308 579 Z M1328 605 L1328 605 L1335 620 L1330 619 L1336 631 L1330 630 L1338 642 L1330 642 L1339 653 L1329 654 L1327 654 L1317 653 L1326 642 L1319 642 L1326 630 L1320 631 L1326 619 L1321 620 L1328 605 Z M1354 574 L1354 574 L1366 598 L1357 598 L1368 617 L1357 616 L1370 636 L1358 635 L1372 655 L1356 657 L1352 657 L1336 655 L1350 635 L1338 636 L1350 616 L1340 617 L1351 598 L1342 598 L1354 574 Z M1380 612 L1380 612 L1387 627 L1381 626 L1388 639 L1382 638 L1389 650 L1382 650 L1391 662 L1381 663 L1378 663 L1368 662 L1377 650 L1370 650 L1377 638 L1371 639 L1378 626 L1372 627 L1380 612 Z M1397 624 L1397 624 L1404 638 L1399 637 L1405 649 L1399 648 L1406 660 L1399 659 L1407 671 L1398 672 L1396 672 L1386 671 L1394 659 L1387 660 L1395 648 L1389 649 L1395 637 L1390 638 L1397 624 Z M1420 625 L1420 625 L1428 642 L1422 641 L1430 655 L1423 655 L1431 669 L1423 668 L1433 682 L1422 683 L1419 683 L1407 682 L1417 668 L1409 669 L1418 655 L1410 655 L1418 641 L1412 642 L1420 625 Z M1436 625 L1436 625 L1445 644 L1438 643 L1447 659 L1438 658 L1448 674 L1439 673 L1450 689 L1437 690 L1434 690 L1421 689 L1432 673 L1423 674 L1433 658 L1425 659 L1433 643 L1426 644 L1436 625 Z M1461 609 L1461 609 L1473 633 L1464 632 L1475 652 L1464 651 L1477 671 L1465 671 L1479 691 L1463 692 L1458 692 L1442 691 L1457 671 L1444 671 L1457 651 L1447 652 L1457 632 L1449 633 L1461 609 Z"/>
-          <g class="fog fog--b" filter="url(#fogBlur)"><ellipse cx="720" cy="725" rx="760" ry="42"/></g>
         </svg>
+        <div class="fog fog--b"></div>
       </div>
-      <div class="hero__layer hero__layer--front" data-depth="0.7">
+      <div class="hero__layer hero__layer--front" data-depth="0.7" style="--d:6">
         <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice"><path style="fill:var(--front)" d="M-40 940 L-40 820 C 200 800 380 860 600 850 C 860 838 1120 800 1480 830 L1480 940 Z M10 340 L10 340 L74 491 L26 486 L85 610 L29 605 L96 730 L31 725 L107 850 L21 860 L-1 860 L-87 850 L-11 725 L-76 730 L-9 605 L-65 610 L-6 486 L-54 491 L10 340 Z M125 460 L125 460 L174 576 L138 572 L183 668 L140 664 L191 760 L141 756 L200 852 L134 860 L116 860 L50 852 L109 756 L59 760 L110 664 L67 668 L112 572 L76 576 L125 460 Z M-40 520 L-40 520 L2 619 L-29 615 L9 697 L-28 693 L16 775 L-26 772 L24 853 L-33 860 L-47 860 L-104 853 L-54 772 L-96 775 L-52 693 L-89 697 L-51 615 L-82 619 L-40 520 Z M225 570 L225 570 L260 654 L234 651 L267 721 L236 718 L273 788 L237 785 L279 854 L231 860 L219 860 L171 854 L213 785 L177 788 L214 718 L183 721 L216 651 L190 654 L225 570 Z M1385 300 L1385 300 L1454 462 L1403 457 L1466 591 L1405 586 L1478 720 L1408 714 L1490 849 L1397 860 L1373 860 L1280 849 L1362 714 L1292 720 L1365 586 L1304 591 L1367 457 L1316 462 L1385 300 Z M1470 430 L1470 430 L1523 555 L1484 550 L1532 654 L1486 649 L1541 752 L1488 748 L1550 851 L1479 860 L1461 860 L1390 851 L1452 748 L1399 752 L1454 649 L1408 654 L1456 550 L1417 555 L1470 430 Z M1270 520 L1270 520 L1312 619 L1281 615 L1319 697 L1282 693 L1326 775 L1284 772 L1334 853 L1277 860 L1263 860 L1206 853 L1256 772 L1214 775 L1258 693 L1221 697 L1259 615 L1228 619 L1270 520 Z M1180 610 L1180 610 L1211 682 L1188 680 L1216 740 L1189 738 L1221 798 L1190 795 L1227 855 L1185 860 L1175 860 L1133 855 L1170 795 L1139 798 L1171 738 L1144 740 L1172 680 L1149 682 L1180 610 Z M330 650 L330 650 L356 711 L337 709 L360 759 L338 757 L365 808 L339 805 L369 856 L335 860 L325 860 L291 856 L321 805 L295 808 L322 757 L300 759 L323 709 L304 711 L330 650 Z M1095 660 L1095 660 L1119 718 L1101 716 L1124 764 L1102 762 L1128 810 L1103 808 L1132 856 L1099 860 L1091 860 L1058 856 L1087 808 L1062 810 L1088 762 L1066 764 L1089 716 L1071 718 L1095 660 Z"/></svg>
       </div>
       <div class="hero__shade"></div>
@@ -115,8 +116,8 @@
           <p class="hero__eyebrow">Forest guesthouse · Dilijan</p>
           <p class="hero__lead">Three cabins in the Dilijan forest. Silence, mist over the mountains and breakfast on the terrace — just 1.5 hours from Yerevan.</p>
           <div class="hero__actions" style="margin-top:18px">
-            <a class="btn btn--accent magnetic" href="#book">Choose dates</a>
-            <a class="btn btn--glass magnetic" href="#cabins">The cabins</a>
+            <a class="btn btn--accent" href="#book">Choose dates</a>
+            <a class="btn btn--glass" href="#cabins">The cabins</a>
           </div>
         </div>
         <div class="seasons">
@@ -131,7 +132,6 @@
         </div>
       </div>
     </div>
-    <div class="hero__scroll" aria-hidden="true"><i></i>Scroll</div>
   </section>
 
   <!-- ============ INTRO ============ -->
@@ -144,7 +144,7 @@
           <p class="lead-p fade-up">Antar House is three wooden cabins on the slope above Dilijan. Your nearest neighbour is the forest; the town centre is a 10-minute drive. We bake bread for breakfast, light the stoves and share trails the guidebooks don’t mention.</p>
         </div>
         <figure class="intro__photo reveal-img" style="margin:0">
-          <img src="../img/intro-fog-house.jpg" alt="A house on a misty slope in a green forest" width="1600" height="1067" loading="lazy">
+          <img src="../img/intro-fog-house.jpg" alt="A house on a misty slope in a green forest" width="1600" height="1067" loading="lazy" decoding="async">
           <figcaption class="intro__badge">Dilijan · 1,500 m</figcaption>
         </figure>
       </div>
@@ -168,9 +168,9 @@
       <div class="cabins__track">
         <article class="cabin">
           <div class="cabin__media">
-            <img src="../img/cabin-forest.jpg" alt="An A-frame cabin with a deck among the pines" width="1600" height="1067" loading="lazy">
+            <img src="../img/cabin-forest.jpg" alt="An A-frame cabin with a deck among the pines" width="1600" height="1067" loading="lazy" decoding="async">
             <span class="cabin__num">01</span>
-            <div class="cabin__inside"><img src="../img/room-window.jpg" alt="A bedroom under the roof with a window to the forest" width="1600" height="1067" loading="lazy"></div>
+            <div class="cabin__inside"><img src="../img/room-window.jpg" alt="A bedroom under the roof with a window to the forest" width="1600" height="1067" loading="lazy" decoding="async"></div>
           </div>
           <div class="cabin__body">
             <div class="cabin__top"><h3>A-frame</h3><span class="cabin__price">45 000 ֏<small>/ night</small></span></div>
@@ -181,9 +181,9 @@
         </article>
         <article class="cabin">
           <div class="cabin__media">
-            <img src="../img/cabin-aframe.jpg" alt="An old wooden house with a shingle roof among the greenery" width="1600" height="1096" loading="lazy">
+            <img src="../img/cabin-aframe.jpg" alt="An old wooden house with a shingle roof among the greenery" width="1600" height="1096" loading="lazy" decoding="async">
             <span class="cabin__num">02</span>
-            <div class="cabin__inside"><img src="../img/room-fireplace.jpg" alt="A room with a wood stove and wooden walls" width="1600" height="1054" loading="lazy"></div>
+            <div class="cabin__inside"><img src="../img/room-fireplace.jpg" alt="A room with a wood stove and wooden walls" width="1600" height="1054" loading="lazy" decoding="async"></div>
           </div>
           <div class="cabin__body">
             <div class="cabin__top"><h3>Old House</h3><span class="cabin__price">35 000 ֏<small>/ night</small></span></div>
@@ -194,9 +194,9 @@
         </article>
         <article class="cabin">
           <div class="cabin__media">
-            <img src="../img/cabin-deck.jpg" alt="A glass-fronted house with a deck in the forest" width="1600" height="900" loading="lazy">
+            <img src="../img/cabin-deck.jpg" alt="A glass-fronted house with a deck in the forest" width="1600" height="900" loading="lazy" decoding="async">
             <span class="cabin__num">03</span>
-            <div class="cabin__inside"><img src="../img/room-view.jpg" alt="A bedroom opening onto the deck" width="1600" height="1067" loading="lazy"></div>
+            <div class="cabin__inside"><img src="../img/room-view.jpg" alt="A bedroom opening onto the deck" width="1600" height="1067" loading="lazy" decoding="async"></div>
           </div>
           <div class="cabin__body">
             <div class="cabin__top"><h3>Glass House</h3><span class="cabin__price">55 000 ֏<small>/ night</small></span></div>
@@ -207,7 +207,6 @@
         </article>
       </div>
     </div>
-    <div class="cabins__progress" aria-hidden="true"><i></i></div>
     <p class="cabins__hint">Swipe sideways →</p>
   </section>
 
@@ -216,32 +215,23 @@
     <div class="container">
       <p class="kicker fade-up">A day here</p>
       <h2 class="h2 split">One day <em>at Antar House</em></h2>
-      <div class="day__inner" style="margin-top:48px">
-        <div class="day__stage">
-          <div class="day__arc" aria-hidden="true">
-            <svg viewBox="0 0 600 120" preserveAspectRatio="none"><path d="M10 115 C 150 -30 450 -30 590 115"/><circle class="day__sun" r="11" cx="10" cy="115"/></svg>
-          </div>
-          <div class="day__photos">
-            <img class="is-on" src="../img/breakfast.jpg" alt="Breakfast outdoors: bread, soup and tea" width="1600" height="1067" loading="lazy">
-            <img src="../img/lake-armenia.jpg" alt="A forest lake in Armenia" width="1600" height="1200" loading="lazy">
-            <img src="../img/campfire.jpg" alt="Friends around a campfire in the forest" width="1600" height="900" loading="lazy">
-          </div>
-        </div>
-        <div class="day__steps">
-          <article class="step is-on">
-            <div><p class="step__time">08:30</p><h3>Breakfast on the deck</h3><p>Home-baked bread, matsun yoghurt, honey from the neighbour’s hives and herbal tea.</p></div>
-            <div class="step__photo"><img src="../img/breakfast.jpg" alt="Breakfast outdoors: bread, soup and tea" width="1600" height="1067" loading="lazy"></div>
-          </article>
-          <article class="step">
-            <div><p class="step__time">13:00</p><h3>Trails and lakes</h3><p>Lake Parz, Haghartsin and the national park’s forest trails — we’ll give you a map and suggest a route.</p></div>
-            <div class="step__photo"><img src="../img/lake-armenia.jpg" alt="A forest lake in Armenia" width="1600" height="1200" loading="lazy"></div>
-          </article>
-          <article class="step">
-            <div><p class="step__time">20:00</p><h3>Campfire and stars</h3><p>In the evening we light a fire, grill khorovats and watch the stars with no city glow.</p></div>
-            <div class="step__photo"><img src="../img/campfire.jpg" alt="Friends around a campfire in the forest" width="1600" height="900" loading="lazy"></div>
-          </article>
-        </div>
+      <div class="day__arc" aria-hidden="true">
+        <svg viewBox="0 0 1200 90"><path class="path" d="M20 86 C 300 -22 900 -22 1180 86"/><circle class="day__sun" r="10" cx="20" cy="86"/></svg>
       </div>
+      <div class="day__steps">
+          <article class="step fade-up">
+            <div><p class="step__time">08:30</p><h3>Breakfast on the deck</h3><p>Home-baked bread, matsun yoghurt, honey from the neighbour’s hives and herbal tea.</p></div>
+            <div class="step__photo"><img src="../img/breakfast.jpg" alt="Breakfast outdoors: bread, soup and tea" width="1600" height="1067" loading="lazy" decoding="async"></div>
+          </article>
+          <article class="step fade-up">
+            <div><p class="step__time">13:00</p><h3>Trails and lakes</h3><p>Lake Parz, Haghartsin and the national park’s forest trails — we’ll give you a map and suggest a route.</p></div>
+            <div class="step__photo"><img src="../img/lake-armenia.jpg" alt="A forest lake in Armenia" width="1600" height="1200" loading="lazy" decoding="async"></div>
+          </article>
+          <article class="step fade-up">
+            <div><p class="step__time">20:00</p><h3>Campfire and stars</h3><p>In the evening we light a fire, grill khorovats and watch the stars with no city glow.</p></div>
+            <div class="step__photo"><img src="../img/campfire.jpg" alt="Friends around a campfire in the forest" width="1600" height="900" loading="lazy" decoding="async"></div>
+          </article>
+        </div>
     </div>
   </section>
 
@@ -312,9 +302,9 @@
           <div class="panel">
             <span class="field-label">Cabin</span>
             <div class="cabin-pick">
-              <label><input type="radio" name="cabin" value="aframe" checked><img src="../img/cabin-forest.jpg" alt="" loading="lazy"><span><b>A-frame</b><span>up to 3 guests</span></span><em>45 000 ֏</em></label>
-              <label><input type="radio" name="cabin" value="old"><img src="../img/cabin-aframe.jpg" alt="" loading="lazy"><span><b>Old House</b><span>up to 2 guests</span></span><em>35 000 ֏</em></label>
-              <label><input type="radio" name="cabin" value="glass"><img src="../img/cabin-deck.jpg" alt="" loading="lazy"><span><b>Glass House</b><span>up to 4 guests</span></span><em>55 000 ֏</em></label>
+              <label><input type="radio" name="cabin" value="aframe" checked><img src="../img/thumb-cabin-forest.jpg" alt="" loading="lazy" decoding="async"><span><b>A-frame</b><span>up to 3 guests</span></span><em>45 000 ֏</em></label>
+              <label><input type="radio" name="cabin" value="old"><img src="../img/thumb-cabin-aframe.jpg" alt="" loading="lazy" decoding="async"><span><b>Old House</b><span>up to 2 guests</span></span><em>35 000 ֏</em></label>
+              <label><input type="radio" name="cabin" value="glass"><img src="../img/thumb-cabin-deck.jpg" alt="" loading="lazy" decoding="async"><span><b>Glass House</b><span>up to 4 guests</span></span><em>55 000 ֏</em></label>
             </div>
             <span class="field-label" style="margin-top:18px">Guests</span>
             <div class="guests"><b>Number of guests</b><div><button type="button" data-guests="-1" aria-label="Fewer">−</button><output id="guestsOut">2</output><button type="button" data-guests="1" aria-label="More">+</button></div></div>
@@ -324,7 +314,7 @@
             <p class="summary__line"><span id="sumNights"></span></p>
             <div class="summary__total"><span>Total</span><b id="sumTotal">—</b></div>
             <p class="summary__warn" id="sumWarn"></p>
-            <a class="btn btn--accent btn--block magnetic" id="bookSend" href="https://wa.me/37477116736" target="_blank" rel="noopener">Send request on WhatsApp</a>
+            <a class="btn btn--accent btn--block" id="bookSend" href="https://wa.me/37477116736" target="_blank" rel="noopener">Send request on WhatsApp</a>
             <p class="summary__note">Breakfast included. 30% deposit after confirmation, free cancellation up to 7 days before.</p>
           </div>
         </div>
@@ -363,22 +353,11 @@
     <div class="footer__grid">
       <div><h4>Contact</h4><ul><li><a href="tel:+37477116736">+374 77 116 736</a></li><li><a href="https://wa.me/37477116736" target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
       <div><h4>Address</h4><p>Dilijan, Tavush province</p></div>
-      <div><h4>Photos</h4><p class="credits">Unsplash: Sára Sedlmajerová, Polina Kuzovkova, Peter, Enes, Clay Banks, Uldis Laganovskis, Vitaly Gariev, Karine Avetisyan, Volodymyr Grytsiuk</p></div>
+      <div><h4>Photos</h4><p class="credits">Unsplash: Sára Sedlmajerová, Polina Kuzovkova, Peter, Enes, Clay Banks, Uldis Laganovskis, Vitaly Gariev, Karine Avetisyan</p></div>
     </div>
     <p class="credits" style="margin-top:28px">© <span id="year">2026</span> Antar House</p>
   </div>
 </footer>
-
-<div class="mbar">
-  <a class="btn btn--accent" href="#book">Book now</a>
-  <a class="btn btn--wa" href="https://wa.me/37477116736" target="_blank" rel="noopener">WhatsApp</a>
-</div>
-
-<div class="cursor" aria-hidden="true"><span class="cursor__ring"><span></span></span><span class="cursor__dot"></span></div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>
