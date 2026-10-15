@@ -1,6 +1,6 @@
 (function () {
   // Номер WhatsApp — только цифры, без «+» и пробелов
-  var WHATSAPP = '37400000000';
+  var WHATSAPP = '37477116736';
 
   var lang = ['ru', 'en'].indexOf(document.documentElement.lang) > -1 ? document.documentElement.lang : 'hy';
   var T = {
