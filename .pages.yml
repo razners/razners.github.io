@@ -1,0 +1,106 @@
+# Админка Pages CMS (app.pagescms.org).
+# Здесь описана форма «Проекты»: что бы вы ни добавили в ней,
+# всё сохраняется в data/projects.json и сразу появляется на сайте студии.
+
+media:
+  input: img/projects
+  output: /img/projects
+
+content:
+  - name: projects
+    label: Проекты (портфолио)
+    type: file
+    path: data/projects.json
+    format: json
+    list: true
+    fields:
+      - name: published
+        label: Показывать на сайте
+        type: boolean
+        default: true
+      - name: order
+        label: Порядок
+        description: 1 — первым в списке, 2 — вторым и так далее
+        type: number
+      - name: concept
+        label: Концепт (демо, не реальный клиент)
+        description: Если включено, на карточке будет пометка «Концепт»
+        type: boolean
+        default: false
+
+      - name: title_hy
+        label: Название — армянский
+        type: string
+        required: true
+      - name: title_ru
+        label: Название — русский
+        type: string
+      - name: title_en
+        label: Название — английский
+        type: string
+
+      - name: category_hy
+        label: Сфера — армянский
+        description: Например «Ավտոծառայություններ». По сферам на сайте появятся фильтры
+        type: string
+      - name: category_ru
+        label: Сфера — русский
+        type: string
+      - name: category_en
+        label: Сфера — английский
+        type: string
+
+      - name: description_hy
+        label: Описание — армянский
+        type: text
+        required: true
+      - name: description_ru
+        label: Описание — русский
+        type: text
+      - name: description_en
+        label: Описание — английский
+        type: text
+
+      - name: features_hy
+        label: Что внутри — армянский
+        description: Через запятую, например «Հաշվիչ, Ամրագրում, Քարտեզ»
+        type: string
+      - name: features_ru
+        label: Что внутри — русский
+        description: Через запятую, например «Калькулятор, Бронирование, Карта»
+        type: string
+      - name: features_en
+        label: Что внутри — английский
+        type: string
+
+      - name: languages
+        label: Языки сайта
+        description: Например «HY · RU · EN»
+        type: string
+      - name: domain
+        label: Адрес в рамке браузера
+        description: Короткий адрес сайта, например «hotel-vernatun.am»
+        type: string
+      - name: cover
+        label: Обложка (скриншот сайта)
+        description: Лучше горизонтальная картинка 1200×750
+        type: image
+        required: true
+      - name: cover_ru
+        label: Обложка для русской версии (необязательно)
+        description: Если пусто — показывается основная обложка
+        type: image
+      - name: cover_en
+        label: Обложка для английской версии (необязательно)
+        type: image
+      - name: url
+        label: Ссылка на сайт
+        description: Полный адрес, например https://example.am — или путь внутри портфолио, например works/hotel/
+        type: string
+        required: true
+      - name: url_ru
+        label: Ссылка на русскую версию (если есть)
+        type: string
+      - name: url_en
+        label: Ссылка на английскую версию (если есть)
+        type: string

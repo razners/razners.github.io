@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://razners.github.io/sitemap.xml

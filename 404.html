@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — ARVEST</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@600;800&family=Onest:wght@600;800&display=swap" rel="stylesheet">
+  <!-- Стили внутри файла: эта страница открывается по любому несуществующему адресу,
+       и относительные пути к css/ там не сработают -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 32px 20px; background: #F5F3EE; color: #131312; font-family: "Onest", "Noto Sans Armenian", system-ui, sans-serif; text-align: center; -webkit-font-smoothing: antialiased; }
+    b { display: block; font-size: clamp(96px, 26vw, 200px); line-height: 1; letter-spacing: -.06em; color: #B4233C; }
+    .msg { display: grid; gap: 6px; margin: 18px 0 30px; }
+    .msg p { margin: 0; font-size: 18px; font-weight: 600; }
+    .msg p + p { color: #84827C; font-weight: 600; font-size: 16px; }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    a { display: inline-flex; align-items: center; min-height: 50px; padding: 0 22px; border-radius: 999px; border: 1.5px solid #D2CEC4; color: #131312; text-decoration: none; font-weight: 800; }
+    a:first-child { background: #131312; border-color: #131312; color: #fff; }
+  </style>
+</head>
+<body>
+  <main>
+    <b>404</b>
+    <div class="msg">
+      <p>Էջը չի գտնվել</p>
+      <p lang="ru">Страница не найдена · Page not found</p>
+    </div>
+    <nav>
+      <a href="/" data-home="">Գլխավոր</a>
+      <a href="/ru/" data-home="ru/" lang="ru">На главную</a>
+      <a href="/en/" data-home="en/" lang="en">Home</a>
+    </nav>
+  </main>
+</body>
+</html>
