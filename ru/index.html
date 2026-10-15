@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>ARVEST — сайты для малого бизнеса в Армении</title>
-  <meta name="description" content="Современные сайты для малого бизнеса: на 3 языках, удобные на телефоне, заявки сразу в WhatsApp. Готово за 7–14 дней. Цены от 80 000 ֏.">
-  <meta name="theme-color" content="#F5F3EE">
-  <meta property="og:title" content="ARVEST — сайты для малого бизнеса">
-  <meta property="og:description" content="На 3 языках, удобные на телефоне, заявки в WhatsApp. Готово за 7–14 дней.">
+  <title>ARVEST — студия сайтов · работы</title>
+  <meta name="description" content="Работы студии ARVEST: сайты для малого бизнеса в Армении. Каждый проект можно открыть и попробовать.">
+  <meta name="theme-color" content="#0B0B0D">
+  <meta property="og:title" content="ARVEST — сайты, которые хочется листать">
+  <meta property="og:description" content="Галерея работ: на 3 языках, удобно с телефона, быстро.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://razners.github.io/ru/">
   <meta property="og:locale" content="ru_RU">
@@ -23,302 +23,83 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@400;500;600;700;800&family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@400;600;700&family=Onest:wght@400;600&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+  <script>(function (h) { var s = location.search.indexOf('noanim') > -1, r = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches; h.classList.add('js', s ? 'static' : (r || !('IntersectionObserver' in window) ? 'calm' : 'anim')); })(document.documentElement);</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "ARVEST",
-    "description": "Сайты для малого бизнеса",
+    "description": "Сайты для малого бизнеса · Ереван",
     "telephone": "+37477116736",
     "areaServed": "AM",
+    "url": "https://razners.github.io/ru/",
     "address": { "@type": "PostalAddress", "addressLocality": "Ереван", "addressCountry": "AM" }
   }
   </script>
 </head>
 <body>
 
-<header class="header">
-  <div class="container header__row">
-    <a class="logo" href="#top" aria-label="ARVEST — на главную">
-      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#131312"/><path d="M9.5 23 16 8.5 22.5 23" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="19" r="2.6" fill="#B4233C"/></svg>
-      <span>ARVEST</span>
-    </a>
-
-    <nav class="nav" id="nav" aria-label="Основное меню">
-      <a href="#works">Работы</a>
-      <a href="#included">Что входит</a>
-      <a href="#prices">Цены</a>
-      <a href="#process">Как работаем</a>
-      <a href="#faq">Вопросы</a>
-      <a href="#contacts">Контакты</a>
-      <div class="nav__mobile-extra">
-        <a class="btn btn--wa btn--block" href="https://wa.me/37477116736" target="_blank" rel="noopener">Написать в WhatsApp</a>
-        <a class="btn btn--ghost btn--block" href="tel:+37477116736">Позвонить: +374 77 116 736</a>
-      </div>
-    </nav>
-
-    <div class="lang" aria-label="Язык">
-      <a href="../" hreflang="hy" lang="hy" data-lang>ՀԱՅ</a>
-      <span class="is-active">РУС</span>
-      <a href="../en/" hreflang="en" lang="en" data-lang>ENG</a>
-    </div>
-
-    <a class="btn btn--primary header__cta" href="#contacts">Обсудить сайт</a>
-
-    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
-  </div>
-</header>
-
 <main id="top">
-
-  <section class="hero">
-    <div class="container hero__grid">
-      <div>
-        <p class="eyebrow"><b>ARVEST</b>Веб-студия · Ереван</p>
-        <h1>Сайты, которые <em>приводят</em> клиентов</h1>
-        <p class="lead">Делаем сайты для малого бизнеса на армянском, русском и английском. Они удобны на телефоне, а заявки приходят сразу в ваш WhatsApp.</p>
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="#works">
-            Смотреть работы
-            <svg viewBox="0 0 24 24" class="i" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a class="btn btn--ghost" href="https://wa.me/37477116736" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" class="i" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z"/></svg>
-            Написать в WhatsApp
-          </a>
-        </div>
-        <ul class="hero__stats">
-          <li><b>7–14 дней</b><span>и сайт готов</span></li>
-          <li><b>3 языка</b><span>HY · RU · EN</span></li>
-          <li><b>80 000 ֏</b><span>стартовая цена</span></li>
-        </ul>
-      </div>
-
-      <div class="devices" aria-hidden="true">
-        <div class="laptop">
-          <div class="laptop__screen"><img src="../img/projects/guesthouse-ru.jpg" alt="" width="1200" height="750"></div>
-          <div class="laptop__base"></div>
-        </div>
-        <div class="phone"><img src="../img/projects/tuning-mobile-ru.jpg" alt="" width="390" height="844"></div>
+  <section class="intro" id="intro" data-tag="intro">
+    <div class="container intro__top">
+      <a class="mark" href="#top" aria-label="ARVEST — на главную"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#EFECE6"/><path d="M9.5 23 16 8.5 22.5 23" fill="none" stroke="#0B0B0D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="19" r="2.6" fill="#E2475F"/></svg><span>ARVEST</span></a>
+      <span class="status"><i aria-hidden="true"></i>Принимаю новые проекты</span>
+    </div>
+    <div class="container intro__body">
+      <h1 aria-label="Сайты, которые хочется листать"><span aria-hidden="true"><span class="ln"><span style="--i:0">Сайты, которые</span></span><span class="ln"><span style="--i:1">хочется</span></span><span class="ln"><span style="--i:2"><em>листать.</em></span></span></span></h1>
+      <div class="intro__foot">
+        <p class="intro__lead"><b>ARVEST</b> — студия сайтов для малого бизнеса, Ереван. Ниже — работы целиком: каждую можно открыть и попробовать.</p>
+        <!-- Указатель и галерея строятся из data/projects.json (админка: app.pagescms.org) -->
+        <ol class="index" id="index" aria-label="Список работ"><li><a href="../works/guesthouse/ru/"><span class="index__n">01</span><span><span class="index__t">Antar House</span></span><span class="index__go"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li><a href="../works/renovation/ru/"><span class="index__n">02</span><span><span class="index__t">Ровно</span></span><span class="index__go"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li><a href="../works/tuning/ru/"><span class="index__n">03</span><span><span class="index__t">MASTARA TUNING</span></span><span class="index__go"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li></ol>
       </div>
     </div>
   </section>
 
-  <section class="section section--paper" id="works">
+  <section class="gallery" id="works" aria-label="Работы"></section>
+
+  <section class="basics" id="basics" data-tag="basics">
     <div class="container">
-      <div class="sec-head reveal">
-        <div>
-          <p class="sec-head__num">01 · Работы</p>
-          <h2>Наши работы</h2>
-        </div>
-        <p class="sec-head__text">Каждый проект открывается целиком — можно попробовать калькуляторы, формы и переключатель языков.</p>
-      </div>
-      <div class="filters" id="filters" role="group" aria-label="Сфера"></div>
-      <!-- Карточки строятся из data/projects.json (админка: app.pagescms.org) -->
-      <div class="projects" id="projects">
-        <a class="project" href="../works/renovation/ru/"><div class="project__body"><h3>Ровно — ремонт квартир</h3><span class="project__go">Открыть сайт →</span></div></a>
-        <a class="project" href="../works/tuning/ru/"><div class="project__body"><h3>MASTARA TUNING — чип-тюнинг</h3><span class="project__go">Открыть сайт →</span></div></a>
-      </div>
+      <h2 class="rv">Что есть в каждом сайте</h2>
+      <div class="basics__grid"><div class="basic rv" style="--i:0"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c.6 3.4 2.8 6 6 7.5M11 5c-.8 3.6-3.4 6.6-7 8"/><path d="M13 21l4-10 4 10M14.4 17.5h5.2"/></svg><h3>Три языка</h3><p>Армянский, русский и английский — отдельными страницами, чтобы Google находил каждую.</p></div><div class="basic rv" style="--i:1"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg><h3>Сначала телефон</h3><p>Крупные кнопки, читаемый текст, ничего не вылезает за экран.</p></div><div class="basic rv" style="--i:2"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg><h3>Заявки в WhatsApp</h3><p>Клиент нажимает кнопку — и готовое сообщение приходит вам.</p></div><div class="basic rv" style="--i:3"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg><h3>Быстрая загрузка</h3><p>Без тяжёлых библиотек: сайт открывается даже на слабом интернете.</p></div></div>
     </div>
   </section>
 
-  <section class="section" id="included">
+  <section class="contact" id="contact" data-tag="contact">
     <div class="container">
-      <div class="sec-head reveal">
-        <div>
-          <p class="sec-head__num">02 · Что входит</p>
-          <h2>В каждом сайте</h2>
-        </div>
-        <p class="sec-head__text">Всё, что нужно, чтобы сайт приводил клиентов, а не просто существовал.</p>
+      <h2 class="rv">Есть идея сайта? <em>Напишите.</em></h2>
+      <p class="contact__lead rv">Расскажите о своём бизнесе — отвечу в течение часа и покажу, каким может быть ваш сайт.</p>
+      <div class="contact__act rv">
+        <a class="cta cta--wa" href="https://wa.me/37477116736?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D0%BB%20%D0%B2%D0%B0%D1%88%D0%B8%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D1%81%D0%B0%D0%B9%D1%82." target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z"/></svg>Написать в WhatsApp</a>
+        <a class="cta cta--line" href="tel:+37477116736">Позвонить: +374 77 116 736</a>
       </div>
-      <div class="included reveal">
-        <div class="inc">
-          <span class="inc__icon"><svg viewBox="0 0 24 24" class="i" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></span>
-          <h3>Удобен на телефоне</h3>
-          <p>Сначала проектируем под телефон — именно оттуда приходит большинство клиентов.</p>
-        </div>
-        <div class="inc">
-          <span class="inc__icon"><svg viewBox="0 0 24 24" class="i" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z"/></svg></span>
-          <h3>Заявки в WhatsApp</h3>
-          <p>Формы и кнопки открывают WhatsApp с готовым сообщением. Ни одна заявка не теряется.</p>
-        </div>
-        <div class="inc">
-          <span class="inc__icon"><svg viewBox="0 0 24 24" class="i" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/></svg></span>
-          <h3>До 3 языков</h3>
-          <p>Армянский, русский и английский — с переключателем языков и правильными шрифтами.</p>
-        </div>
-        <div class="inc">
-          <span class="inc__icon"><svg viewBox="0 0 24 24" class="i" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
-          <h3>Google Maps и SEO</h3>
-          <p>Сайт правильно показывается в Google, а ссылка в мессенджерах — с красивым превью.</p>
-        </div>
-        <div class="inc">
-          <span class="inc__icon"><svg viewBox="0 0 24 24" class="i" aria-hidden="true"><rect x="4" y="2.5" width="16" height="19" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01" stroke-width="2.2"/></svg></span>
-          <h3>Калькулятор или бронирование</h3>
-          <p>Калькулятор цены, форма бронирования или заказа — под ваш бизнес.</p>
-        </div>
-        <div class="inc">
-          <span class="inc__icon"><svg viewBox="0 0 24 24" class="i" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01" stroke-width="2.4"/></svg></span>
-          <h3>Хостинг и домен</h3>
-          <p>Поможем выбрать домен, подключим хостинг и SSL. Всё работает с первого дня.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--dark" id="prices">
-    <div class="container">
-      <div class="sec-head reveal">
-        <div>
-          <p class="sec-head__num">03 · Цены</p>
-          <h2>Понятные цены</h2>
-        </div>
-        <p class="sec-head__text">Итоговая цена зависит от количества блоков и языков. Расчёт — бесплатно, после первого звонка.</p>
-      </div>
-      <!-- Цены меняйте здесь -->
-      <div class="prices">
-        <article class="price reveal">
-          <h3>Лендинг</h3>
-          <p class="price__for">Одна страница для услуги или небольшого бизнеса</p>
-          <p class="price__sum"><small>от</small> 80 000 ֏</p>
-          <ul><li>1 язык</li><li>До 7 блоков</li><li>Заявки в WhatsApp</li><li>Версия для телефона</li><li>Готово за 7 дней</li></ul>
-          <a class="btn btn--ghost btn--block" href="#contacts">Заказать</a>
-        </article>
-        <article class="price price--main reveal">
-          <span class="price__flag">Выбирают чаще всего</span>
-          <h3>Бизнес</h3>
-          <p class="price__for">Многоязычный сайт с калькулятором или бронированием</p>
-          <p class="price__sum"><small>от</small> 150 000 ֏</p>
-          <ul><li>2–3 языка</li><li>Калькулятор или бронирование</li><li>Google Maps и SEO</li><li>Превью в мессенджерах</li><li>Готово за 14 дней</li></ul>
-          <a class="btn btn--primary btn--block" href="#contacts">Заказать</a>
-        </article>
-        <article class="price reveal">
-          <h3>Поддержка</h3>
-          <p class="price__for">Сайт работает, а вы занимаетесь бизнесом</p>
-          <p class="price__sum"><small>от</small> 10 000 ֏<small>/мес</small></p>
-          <ul><li>Хостинг и SSL</li><li>Обновление цен и текстов</li><li>До 1 часа правок в месяц</li><li>Резервные копии</li></ul>
-          <a class="btn btn--ghost btn--block" href="#contacts">Подключить</a>
-        </article>
-      </div>
-      <p class="prices__note">Домен оплачивается отдельно, в зависимости от зоны (.am, .com). Предоплата 50%, остальное — после запуска.</p>
-    </div>
-  </section>
-
-  <section class="section" id="process">
-    <div class="container">
-      <div class="sec-head reveal">
-        <div>
-          <p class="sec-head__num">04 · Как работаем</p>
-          <h2>От заявки до запуска</h2>
-        </div>
-        <p class="sec-head__text">Весь путь — 1–2 недели. На каждом этапе вы видите результат и можете вносить правки.</p>
-      </div>
-      <ol class="steps">
-        <li class="step reveal"><span class="step__n">1</span><div><h3>Заявка</h3><p>Напишите в WhatsApp или заполните форму.</p><span class="step__time">В тот же день</span></div></li>
-        <li class="step reveal"><span class="step__n">2</span><div><h3>Бриф</h3><p>30 минут разговора о вашем бизнесе, клиентах и конкурентах.</p><span class="step__time">1 день</span></div></li>
-        <li class="step reveal"><span class="step__n">3</span><div><h3>Дизайн и тексты</h3><p>Делаем дизайн и тексты — до 3 языков.</p><span class="step__time">3–7 дней</span></div></li>
-        <li class="step reveal"><span class="step__n">4</span><div><h3>Правки</h3><p>Показываем сайт и меняем всё, что вы захотите.</p><span class="step__time">1–3 дня</span></div></li>
-        <li class="step reveal"><span class="step__n">5</span><div><h3>Запуск</h3><p>Подключаем домен, проверяем на телефонах и запускаем.</p><span class="step__time">1 день</span></div></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section section--paper" id="faq">
-    <div class="container faq-wrap">
-      <div class="sec-head reveal">
-        <div>
-          <p class="sec-head__num">05 · Вопросы</p>
-          <h2>Частые вопросы</h2>
-        </div>
-        <p class="sec-head__text">Не нашли ответ? Напишите нам в WhatsApp.</p>
-      </div>
-      <div class="faq">
-        <details class="reveal">
-          <summary>За сколько времени будет готов сайт?</summary>
-          <p>Лендинг — примерно 7 дней, многоязычный сайт — 10–14 дней. Срок зависит и от того, как быстро вы пришлёте фото и информацию.</p>
-        </details>
-        <details class="reveal">
-          <summary>Что нужно от меня?</summary>
-          <p>Рассказ о вашем бизнесе, список услуг и цены, фотографии и контакты. Остальное сделаем мы.</p>
-        </details>
-        <details class="reveal">
-          <summary>Кто пишет тексты?</summary>
-          <p>Мы. Пишем простым языком — до 3 языков, а вы проверяете и утверждаете.</p>
-        </details>
-        <details class="reveal">
-          <summary>Смогу сам менять цены и тексты?</summary>
-          <p>Да. Можем подключить простую админку — или просто напишите нам, и мы обновим в рамках поддержки.</p>
-        </details>
-        <details class="reveal">
-          <summary>Нужно ли покупать домен и хостинг?</summary>
-          <p>Домен регистрируется на ваше имя, чтобы он всегда был вашим, — поможем выбрать и подключить. Хостинг входит в пакет поддержки.</p>
-        </details>
-        <details class="reveal">
-          <summary>Как проходит оплата?</summary>
-          <p>50% предоплата в начале работы и 50% после запуска сайта. Оплата переводом или картой.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="contacts">
-    <div class="container">
-      <div class="contact">
-        <div>
-          <p class="sec-head__num" style="color:#FF8BA0">06 · Контакты</p>
-          <h2>Давайте обсудим ваш сайт</h2>
-          <p class="contact__lead">Напишите, какой у вас бизнес, — ответим в течение часа и предложим решение и цену.</p>
-          <ul class="contact__list">
-            <li><span class="contact__k">WhatsApp</span><a href="https://wa.me/37477116736" target="_blank" rel="noopener">+374 77 116 736</a></li>
-            <li><span class="contact__k">Телефон</span><a href="tel:+37477116736">+374 77 116 736</a></li>
-            <li><span class="contact__k">Работаем</span><b>По всей Армении, удалённо</b></li>
-          </ul>
-        </div>
-        <form class="form" id="leadForm" novalidate>
-          <h3>Заявка на сайт</h3>
-          <label class="field"><span>Ваше имя</span><input name="name" type="text" autocomplete="name" placeholder="Имя"></label>
-          <label class="field">
-            <span>Телефон</span>
-            <input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+374" required>
-            <em class="field__err">Укажите телефон, чтобы мы могли связаться</em>
-          </label>
-          <label class="field">
-            <span>Тип бизнеса</span>
-            <select name="biz">
-              <option>Услуги (ремонт, авто, красота)</option>
-              <option>Гостиница или гестхаус</option>
-              <option>Кафе или ресторан</option>
-              <option>Медицинская клиника</option>
-              <option>Магазин</option>
-              <option>Другое</option>
-            </select>
-          </label>
-          <label class="field"><span>Комментарий <small>— необязательно</small></span><textarea name="msg" rows="3" placeholder="Например: есть Instagram, хочу сайт на 2 языках"></textarea></label>
-          <button class="btn btn--wa btn--block" type="submit">Отправить в WhatsApp</button>
-          <p class="form__note">Откроется WhatsApp с готовым сообщением — останется нажать «Отправить».</p>
-        </form>
-      </div>
+      <p class="contact__note rv">Работаю по всей Армении, удалённо.</p>
     </div>
   </section>
 </main>
 
 <footer class="footer">
-  <div class="container footer__row">
-    <a class="logo" href="#top"><svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#131312"/><path d="M9.5 23 16 8.5 22.5 23" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="19" r="2.6" fill="#B4233C"/></svg><span>ARVEST</span></a>
-    <p>Сайты для малого бизнеса · Ереван</p>
-    <p>© <span id="year">2026</span></p>
+  <div class="container">
+    <p>© <span id="year">2026</span> ARVEST · Сайты для малого бизнеса · Ереван</p>
+    <nav aria-label="Язык"><a href="../" hreflang="hy" lang="hy" data-lang>ՀԱՅ</a><span aria-current="true">РУС</span><a href="../en/" hreflang="en" lang="en" data-lang>ENG</a></nav>
   </div>
 </footer>
 
-<div class="mbar">
-  <a class="btn btn--primary" href="#works">Работы</a>
-  <a class="btn btn--wa" href="https://wa.me/37477116736" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" class="i" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>
-    WhatsApp
+<nav class="tag" id="tag" aria-label="Навигация по галерее">
+  <button class="tag__btn" type="button" data-step="-1" aria-label="Предыдущая работа"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <a class="tag__now" href="#top">
+    <span class="tag__txt"><span class="tag__n">ARVEST</span><span class="tag__t">Галерея работ</span></span>
+    <span class="tag__bar" aria-hidden="true"><b></b></span>
   </a>
-</div>
+  <button class="tag__btn" type="button" data-step="1" aria-label="Следующая работа"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+  <i class="tag__sep" aria-hidden="true"></i>
+  <details class="tag__lang">
+    <summary aria-label="Язык">РУС</summary>
+    <ul><li><a href="../" hreflang="hy" lang="hy" data-lang>Հայերեն <small>ՀԱՅ</small></a></li><li><span aria-current="true">Русский <small>РУС</small></span></li><li><a href="../en/" hreflang="en" lang="en" data-lang>English <small>ENG</small></a></li></ul>
+  </details>
+  <a class="tag__wa" href="https://wa.me/37477116736?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D0%BB%20%D0%B2%D0%B0%D1%88%D0%B8%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D1%81%D0%B0%D0%B9%D1%82." target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z"/></svg></a>
+</nav>
 
 <script src="../js/main.js"></script>
 </body>

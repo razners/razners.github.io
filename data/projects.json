@@ -9,9 +9,9 @@
     "category_hy": "Հյուրանոցներ և հյուրատներ",
     "category_ru": "Гостиницы и гестхаусы",
     "category_en": "Hotels & guesthouses",
-    "description_hy": "Կենդանի տեսարան՝ տարվա եղանակների փոփոխությամբ, տնակների հորիզոնական ցուցադրում, շրջակայքի քարտեզ և ամրագրում օրացույցով։",
-    "description_ru": "Живая сцена со сменой времён года, горизонтальная галерея домиков, карта окрестностей и бронирование с календарём.",
-    "description_en": "A living scene that changes with the seasons, a horizontal cabin gallery, a map of the area and booking with a calendar.",
+    "description_hy": "Կենդանի տեսարան՝ տարվա եղանակների փոփոխությամբ, տնակների կարուսել, շրջակայքի քարտեզ և ամրագրում օրացույցով։",
+    "description_ru": "Живая сцена со сменой времён года, карусель домиков, карта окрестностей и бронирование с календарём.",
+    "description_en": "A living scene that changes with the seasons, a cabin carousel, a map of the area and booking with a calendar.",
     "features_hy": "Մոուշն դիզայն, Տարվա եղանակներ, Ամրագրման օրացույց, Քարտեզ",
     "features_ru": "Моушн-дизайн, Времена года, Календарь бронирования, Карта",
     "features_en": "Motion design, Seasons, Booking calendar, Map",
@@ -21,7 +21,15 @@
     "cover_en": "/img/projects/guesthouse-en.jpg",
     "url": "works/guesthouse/",
     "url_ru": "works/guesthouse/ru/",
-    "url_en": "works/guesthouse/en/"
+    "url_en": "works/guesthouse/en/",
+    "accent": "#D9774A",
+    "year": "2026",
+    "preview": "/img/projects/guesthouse-long.jpg",
+    "preview_ru": "/img/projects/guesthouse-long-ru.jpg",
+    "preview_en": "/img/projects/guesthouse-long-en.jpg",
+    "preview_mobile": "/img/projects/guesthouse-mlong.jpg",
+    "preview_mobile_ru": "/img/projects/guesthouse-mlong-ru.jpg",
+    "preview_mobile_en": "/img/projects/guesthouse-mlong-en.jpg"
   },
   {
     "published": true,
@@ -45,7 +53,15 @@
     "url_ru": "works/renovation/ru/",
     "url_en": "works/renovation/en/",
     "cover_ru": "/img/projects/renovation-ru.jpg",
-    "cover_en": "/img/projects/renovation-en.jpg"
+    "cover_en": "/img/projects/renovation-en.jpg",
+    "accent": "#E2A428",
+    "year": "2026",
+    "preview": "/img/projects/renovation-long.jpg",
+    "preview_ru": "/img/projects/renovation-long-ru.jpg",
+    "preview_en": "/img/projects/renovation-long-en.jpg",
+    "preview_mobile": "/img/projects/renovation-mlong.jpg",
+    "preview_mobile_ru": "/img/projects/renovation-mlong-ru.jpg",
+    "preview_mobile_en": "/img/projects/renovation-mlong-en.jpg"
   },
   {
     "published": true,
@@ -69,6 +85,14 @@
     "url_ru": "works/tuning/ru/",
     "url_en": "works/tuning/en/",
     "cover_ru": "/img/projects/tuning-ru.jpg",
-    "cover_en": "/img/projects/tuning-en.jpg"
+    "cover_en": "/img/projects/tuning-en.jpg",
+    "accent": "#FF5A1F",
+    "year": "2026",
+    "preview": "/img/projects/tuning-long.jpg",
+    "preview_ru": "/img/projects/tuning-long-ru.jpg",
+    "preview_en": "/img/projects/tuning-long-en.jpg",
+    "preview_mobile": "/img/projects/tuning-mlong.jpg",
+    "preview_mobile_ru": "/img/projects/tuning-mlong-ru.jpg",
+    "preview_mobile_en": "/img/projects/tuning-mlong-en.jpg"
   }
 ]

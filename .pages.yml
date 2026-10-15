@@ -104,3 +104,33 @@ content:
       - name: url_en
         label: Ссылка на английскую версию (если есть)
         type: string
+
+      - name: accent
+        label: Цвет работы в галерее
+        description: Подсветка за устройством и номер, например «#D9774A». Если пусто — фирменный цвет студии
+        type: string
+      - name: year
+        label: Год
+        description: Например «2026»
+        type: string
+
+      - name: preview
+        label: Длинный скриншот — компьютер (необязательно)
+        description: Вся страница сверху вниз, ширина 1000 px. Сам прокручивается в рамке браузера. Если пусто — показывается обложка
+        type: image
+      - name: preview_ru
+        label: Длинный скриншот — компьютер, русская версия
+        type: image
+      - name: preview_en
+        label: Длинный скриншот — компьютер, английская версия
+        type: image
+      - name: preview_mobile
+        label: Длинный скриншот — телефон (необязательно)
+        description: Мобильная версия сверху вниз, ширина 600 px. Сам прокручивается в рамке телефона
+        type: image
+      - name: preview_mobile_ru
+        label: Длинный скриншот — телефон, русская версия
+        type: image
+      - name: preview_mobile_en
+        label: Длинный скриншот — телефон, английская версия
+        type: image
